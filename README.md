@@ -18,7 +18,8 @@ cd jestr-axon-demo
 ./gradlew bootRun
 ```
 
-Note that this demo includes an in-memory database that does not persist projected data.
+Note that, this demo does not use commands or aggregates which have certain complexities and issues.
+It includes an in-memory database that does not persist projected data.
 However, because it has not been configured to remember where it is in the axon event stream,
 previous events are replayed when the connection tot he axon server is established so the data is restored.
 
